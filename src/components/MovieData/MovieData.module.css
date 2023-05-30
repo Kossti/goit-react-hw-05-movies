@@ -1,0 +1,23 @@
+.cardFilm {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.cardFilmDetails {
+    margin-top: 13px;
+    padding-right: 80px;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+.img {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.score {
+    margin-bottom: 30px;
+}
