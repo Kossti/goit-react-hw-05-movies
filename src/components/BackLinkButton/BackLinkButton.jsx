@@ -8,7 +8,7 @@ const BackLinkButton = ({ backlinkRef }) => {
     <div>
       <button type="button" className={css.backLinkBtn}>
         <NavLink to={backlinkRef} className={css.backLink}>
-          Go back
+          <span>Go back</span>
         </NavLink>
       </button>
     </div>

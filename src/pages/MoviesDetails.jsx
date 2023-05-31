@@ -1,3 +1,4 @@
+import AddInfo from 'components/AddInfo/AddInfo';
 import BackLinkButton from 'components/BackLinkButton/BackLinkButton';
 import MovieData from 'components/MovieData/MovieData';
 import { getMoviesDetails } from 'components/services/fetchMoviesAPI';
@@ -25,6 +26,7 @@ const MoviesDetails = () => {
     <div>
       <BackLinkButton backlinkRef={backlinkRef} />
       {movie && <MovieData movie={movie} />}
+      <AddInfo location={backlinkRef} />
     </div>
   );
 };
