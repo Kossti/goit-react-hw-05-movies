@@ -1,0 +1,28 @@
+.backLinkBtn {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 98px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid #e0e3e8;
+    border-radius: 4px;
+}
+
+.backLinkBtn:hover {
+    background-color: #0293fa;
+    border: 1px solid #0293fa;
+    color: white;
+}
+
+.backLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.backLink:hover {
+    color: white;
+}
