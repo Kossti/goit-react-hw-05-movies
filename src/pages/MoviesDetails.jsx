@@ -3,7 +3,7 @@ import BackLinkButton from 'components/BackLinkButton/BackLinkButton';
 import MovieData from 'components/MovieData/MovieData';
 import { getMoviesDetails } from 'components/services/fetchMoviesAPI';
 import React, { useEffect, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { Outlet, useLocation, useParams } from 'react-router-dom';
 // import Reviews from 'components/Reviews/Reviews';
 // import Cast from 'components/Cast/Cast';
 
@@ -27,6 +27,7 @@ const MoviesDetails = () => {
       <BackLinkButton backlinkRef={backlinkRef} />
       {movie && <MovieData movie={movie} />}
       <AddInfo location={backlinkRef} />
+      <Outlet />
     </div>
   );
 };

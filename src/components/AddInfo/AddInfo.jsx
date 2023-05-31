@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const AddInfo = ({ location }) => {
   return (
     <div>
-      <p className={css.addInfo}>Assitional Information</p>
+      <h4 className={css.addInfo}>Additional Information</h4>
       <ul>
         <li>
           <NavLink to={'cast'} state={{ from: location }}>
@@ -19,6 +19,7 @@ const AddInfo = ({ location }) => {
           </NavLink>
         </li>
       </ul>
+      <hr></hr>
     </div>
   );
 };

@@ -35,7 +35,7 @@ export function getMoviesDetails(movieId) {
 
 // запит інформації про акторський склад для сторінки кінофільму
 export function getMoviesCast(movieId) {
-  return fetch(`${URL}movie/${movieId}credits?api_key=${API_KEY}`).then(
+  return fetch(`${URL}movie/${movieId}/credits?api_key=${API_KEY}`).then(
     response =>
       response
         .json()
@@ -45,7 +45,7 @@ export function getMoviesCast(movieId) {
 }
 // запит оглядів для сторінки кінофільму.
 export function getMoviesReviews(movieId) {
-  return fetch(`${URL}movie/${movieId}reviews?api_key=${API_KEY}`).then(
+  return fetch(`${URL}movie/${movieId}/reviews?api_key=${API_KEY}`).then(
     response =>
       response
         .json()

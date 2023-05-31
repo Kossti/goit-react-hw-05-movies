@@ -44,6 +44,7 @@ const MovieData = ({ movie }) => {
           )}
         </div>
       </div>
+      <hr />
     </>
   );
 };
