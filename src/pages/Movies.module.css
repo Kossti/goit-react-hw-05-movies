@@ -1,0 +1,30 @@
+.form {
+    margin: 30px 0px 30px 26px;
+}
+
+.input {
+    width: 400px;
+    height: 30px;
+    border: 1px solid #e0e3e8;
+    font-size: 16px;
+}
+
+.submit {
+    height: 34px;
+    padding: 0 15px;
+    border: 0px solid #d6d8dd;
+    background-color: #6565667b;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #0087fd;
+    border-color: #0087fd;
+    color: white;
+}
+
+.noMovies {
+    margin-left: 25px;
+}

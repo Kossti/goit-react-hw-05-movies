@@ -12,13 +12,13 @@ export function getMovies() {
 }
 
 //  пошук фільму за ключовим словом на сторінці фільмів
-export function getMoviesBySearch(searchQuery) {
+export function getMoviesBySearch(query) {
   return fetch(
-    `${URL}search/movie?api_key=${API_KEY}&query${searchQuery}`
+    `${URL}search/movie?api_key=${API_KEY}&query${query}&language=en-US`
   ).then(response =>
     response
       .json()
-      //   .then(response => console.log(response))
+      .then(response => console.log(response))
       .catch(error => console.error(error))
   );
 }
