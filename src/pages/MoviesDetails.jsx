@@ -1,5 +1,6 @@
 import AddInfo from 'components/AddInfo/AddInfo';
 import BackLinkButton from 'components/BackLinkButton/BackLinkButton';
+// import Loading from 'components/Loading/Loading';
 import MovieData from 'components/MovieData/MovieData';
 import { getMoviesDetails } from 'components/services/fetchMoviesAPI';
 import React, { useEffect, useState } from 'react';

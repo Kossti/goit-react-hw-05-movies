@@ -14,9 +14,7 @@ const Movies = () => {
   const [inputSearch, setInputSearch] = useState(query);
 
   useEffect(() => {
-    if (query === '') {
-      return;
-    }
+    if (query === '') return;
 
     setMovies(null);
     setTotalMovies(null);
@@ -37,8 +35,10 @@ const Movies = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
+
     const form = event.target;
     const queryNormalized = form.query.value.toLowerCase().trim();
+
     setSearchParams({ query: queryNormalized });
     form.reset();
   };
